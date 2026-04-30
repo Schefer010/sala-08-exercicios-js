@@ -23,9 +23,9 @@ function subss(){
     var n7 = parseFloat(document.getElementById("n7").value)
     var n8 = parseFloat(document.getElementById("n8").value)
     var resp = document.getElementById("respdivi")
-    resp.textContent = n7 / n8
+    
     if(n8 !== 0){
-        resp.textContent = n7 / n8
+        resp.textContent = (n7 / n8).toFixed(2)
     }else{
         resp.textContent = "Não se divide por 0!"
     }
