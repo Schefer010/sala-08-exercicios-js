@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav{
@@ -16,6 +17,7 @@ nav{
     justify-content: center;
     gap: 20px;
     animation: fromTop 500ms ease-in-out;
+    z-index: 999;
 }
 
 @keyframes fromTop {
@@ -44,12 +46,29 @@ a:hover{
 
 body{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 150px;
+}
 
+hr{
+    width: 100%;
 }
 
 .central{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
+}
+
+.list-group{
+    width: 400px;
+}
+
+.list-group-item{
+    flex-direction: column;
+    width: 400px;
 }
